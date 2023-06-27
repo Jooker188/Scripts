@@ -63,8 +63,7 @@ function run_prompt_for_domain_if_required() {
   if [ -z "$DOMAIN" ]
   then
     info_msg ""
-    info_msg "Entrez le domaine (ou l'adresse IP si vous n'utilisez pas de domaine) sur lequel vous souhaitez héberger BookStack, puis appuyez sur [ENTRÉE]."
-    info_msg "Exemples : mon-site.com ou docs.mon-site.com ou ${CURRENT_IP}"
+    info_msg "Entrez l'IP publique de la machine qui héberge ce serveur :"
     read -r DOMAIN
     info_msg ""
   fi
