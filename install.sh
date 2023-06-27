@@ -63,7 +63,7 @@ function run_prompt_for_domain_if_required() {
   if [ -z "$DOMAIN" ]
   then
     info_msg ""
-    info_msg "Entrez l'IP publique de la machine qui héberge ce serveur :"
+    info_msg "Entrez l'IP publique de la machine qui héberge ce serveur ou un nom de domaine :"
     read -r DOMAIN
     info_msg ""
   fi
